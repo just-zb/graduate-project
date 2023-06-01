@@ -1,0 +1,5 @@
+com/example/get_kafka_data/GetKafkaDataApplication.class
+com/example/get_kafka_data/service/MessageService.class
+com/example/get_kafka_data/service/serviceImpl/MessageServiceImpl.class
+com/example/get_kafka_data/controller/SendController.class
+com/example/get_kafka_data/pojo/Message.class

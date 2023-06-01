@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>graduate_project</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>kafka_to_hive</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>kafka_to_hive</name>
+    <description>kafka_to_hive</description>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+<dependencies>
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-core</artifactId>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-streaming-java</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-core -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-core</artifactId>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-common -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-table-common</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-connector-kafka</artifactId>
+        <version>1.16.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-hive -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-connector-hive_2.12</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-planner -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-table-planner_2.12</artifactId>
+        <version>1.16.0</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-api-java-bridge -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-table-api-java-bridge</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-api-java -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-table-api-java</artifactId>
+        <version>1.16.0</version>
+    </dependency>
+
+</dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
